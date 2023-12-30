@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Rubik';
+}
+body{
+    background-color: hsl(226, 43%, 10%);
+    height: 100vh;
+   
+}
+.parent{
+    display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: 0.5fr repeat(2, 1fr) 0.5fr;
+grid-column-gap: 30px;
+grid-row-gap: 30px;
+    
+}
+
+@media screen and (max-width: 1148px) {
+  .parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: 0.2fr repeat(3, 1fr);
+grid-column-gap: 30px;
+grid-row-gap: 30px;
+}
+  .Bcard{
+     grid-area: 2 / 2 / 4 / 3; 
+  }
+
+}
+
+@media screen and (max-width: 860px) {
+  .parent {
+display: grid;
+grid-template-columns: .5fr 1fr .5fr;
+grid-template-rows: .5fr repeat(7, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 025px;
+}
+
+.Bcard { grid-area: 2 / 2 / 3 / 3; }
+.card-1 { grid-area: 3 / 2 / 4 / 3; }
+.card-2 { grid-area: 4 / 2 / 5 / 3; }
+.card-3 { grid-area: 5 / 2 / 6 / 3; }
+.card-4 { grid-area: 6 / 2 / 7 / 3; }
+.card-5 { grid-area: 7 / 2 / 8 / 3; }
+.card-6 { grid-area: 8 / 2 / 9 / 3; }
+
+}
+
+
