@@ -1,0 +1,135 @@
+/* Reset default styles for .card */
+.card {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 255px;
+  border-radius: 5%;
+  height: 245px; /* Specify a unit (e.g., px) for height */
+}
+
+/* Common styles for .card-1 to .card-6 */
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
+  background-size: 30%;
+  background-repeat: no-repeat;
+  color: #fff;
+  background-position: calc(100% - 20px) calc(0% - 5px);
+}
+
+/* Individual styles for each card */
+.card-1 {
+  grid-area: 2 / 3 / 3 / 4;
+  background-image: url('../assets/icon-work.svg');
+  background-color: hsl(15, 100%, 68%);
+}
+
+.card-2 {
+  grid-area: 2 / 4 / 3 / 5;
+  background-image: url('../assets/icon-play.svg');
+  background-color: hsl(195, 74%, 62%);
+}
+
+.card-3 {
+  grid-area: 2 / 5 / 3 / 6;
+  background-image: url('../assets/icon-study.svg');
+  background-color: hsl(348, 100%, 68%);
+}
+
+.card-4 {
+  grid-area: 3 / 3 / 4 / 4;
+  background-image: url('../assets/icon-exercise.svg');
+  background-color: hsl(145, 58%, 55%);
+}
+
+.card-5 {
+  grid-area: 3 / 4 / 4 / 5;
+  background-image: url('../assets/icon-social.svg');
+  background-color: hsl(264, 64%, 52%);
+}
+
+.card-6 {
+  grid-area: 3 / 5 / 4 / 6;
+  background-image: url('../assets/icon-self-care.svg');
+  background-color: hsl(43, 84%, 65%);
+}
+
+
+
+.sidebar{
+  height: 80%;
+  position:absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  border-radius: 5%;
+  padding-top: 30px;
+  padding-left: 35px;
+  background-color: hsl(235, 46%, 20%);
+ 
+}
+.sidebar h1{
+  font-size: 2.4em;
+   
+}
+.sidebar p {
+  color: hsl(235, 46%, 20%);
+  font-size: 15px;
+   color: var(--neutral-4);
+}
+#header{
+ display: flex;
+}
+#header button{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  background-color: transparent;
+  color: #b2b7f9;
+  font-size: 20px;
+
+}
+.sidebar:hover{
+  background-color: #34397b;
+  cursor: pointer;
+}
+#header button:hover{
+  color:#f0f0f0;
+}
+
+@media (max-width: 1148px) {
+
+
+.card-1 { grid-area: 2 / 3 / 3 / 4; }
+.card-2 { grid-area: 2 / 4 / 3 / 5; }
+.card-3 { grid-area: 3 / 3 / 4 / 4; }
+.card-4 { grid-area: 3 / 4 / 4 / 5; }
+.card-5 { grid-area: 4 / 3 / 5 / 4; }
+.card-6 { grid-area: 4 / 4 / 5 / 5; }
+} 
+
+@media (max-width: 860px) {
+ .card{
+  width: 330px;
+  height: 160px;
+ 
+ }
+ .sidebar{
+  height: 75%;
+  
+ 
+ }
+ .sidebar p {
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+  font-size: 12px;
+ }
+ 
+
+}
